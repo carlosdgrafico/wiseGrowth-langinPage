@@ -1,0 +1,59 @@
+html {
+   font-size: 16px;
+}
+
+body {
+   font-family: 'Open Sans', sans-serif; /* 1 */
+   @include font-size(16);
+   @include line-height(24);
+   font-weight: 300;
+   margin: 0;
+   overflow-x: hidden !important;
+   padding: 0;
+   position: relative;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary,
+p {
+   margin:0;
+   padding: 0;
+}
+
+a {
+   text-decoration: none;
+   display: inline-block;
+}
+
+a:active,
+a:hover,
+a:focus {
+   outline: none;
+}
+
+
+ol,
+ul {
+   list-style-type: none;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+img {
+   border: 0;
+   display: block;
+   margin: 0 auto;
+   width: 100%;
+}

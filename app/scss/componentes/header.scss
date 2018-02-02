@@ -1,0 +1,129 @@
+.header{
+   background-color: $primary-color;
+   // box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.3);
+   color: #fff;
+   height: 100px;
+   position: fixed;
+   top: 0;
+   text-align: center;
+   width: 100%;
+   z-index: 100;
+}
+
+   .header--logotipo{
+      @include font-size(70);
+      line-height: 100px;
+   }
+
+
+   /* Mobile iconos */
+   .header--iconMobile{
+      position: absolute;
+      top: 30%;
+      right: 2%;
+
+      &--text{
+         @include font-size(16);
+         display: inline-block;
+         margin-right: .5em;
+         vertical-align: middle;
+      }
+
+      &--burger {
+         background-color: transparent;
+         border-radius: 5px;
+         cursor: pointer;
+         display: inline-block;
+         height: 40px;
+         margin-top: 5px;
+         transition: all .3s ease-out;
+         vertical-align: middle;
+         width: 40px;
+      }
+
+   }
+
+         .burger--stripe {
+            backface-visibility: hidden;
+            background: #fff;
+            height: 2px;
+            margin: 8px auto;
+            transition: all 0.3s;
+            width: 85%;
+            &:nth-child(2){
+               position: relative;
+               left: -4px;
+               width: 60%;
+            }
+         }
+
+         .on .burger--stripe__top {
+            background-color: #fff;
+            transform: rotate(45deg) translate(7px, 7px);
+         }
+
+         .on .burger--stripe__middle {
+            opacity: 0;
+         }
+
+         .on .burger--stripe__bottom {
+            background-color: #fff;
+            transform: rotate(-45deg) translate(7px, -7px);
+         }
+
+
+   /* FIN - mobile iconos */
+
+
+
+
+   /* Menu lateral ( mobile ) */
+	.menuLateral{
+	   display: inline-block;
+	   background-color: rgba(35,51,64,0);
+      height: 100vh;
+	   position: absolute;
+	   top: 99px;
+	   left: -100%;
+	   //overflow-x: hidden;
+	   overflow-y: scroll;
+	   transition: all .5s ease-out;
+	   width: 100%;
+      z-index: 0;
+      text-align: center;
+      padding-bottom: 10em;
+
+      &--item{
+         margin: 5em 0;
+         opacity: .3;
+         @media(max-width: 480px){
+            margin: 2em 0;
+         }
+      }
+
+      &--item--link{
+         color: #fff;
+         display: block;
+         @include font-size(60);
+         text-transform: uppercase;
+         transition: all .3s;
+         &:hover{
+            opacity: .3;
+         }
+
+         @media(max-width: 480px){
+            @include font-size(30);
+         }
+      }
+
+	}
+
+
+   .menuLateral--item__active{
+      .menuLateral--item--link{
+         color: $secondary-color !important;
+      }
+   }
+
+
+	/* FIN - menu lateral ( mobile ) */

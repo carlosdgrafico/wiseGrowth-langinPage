@@ -1,0 +1,1040 @@
+/* BASE - GENERALES */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?p6obof");
+  src: url("../fonts/icomoon.eot?p6obof#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?p6obof") format("truetype"), url("../fonts/icomoon.woff?p6obof") format("woff"), url("../fonts/icomoon.svg?p6obof#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 13, app/scss/base/icon.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 28, app/scss/base/icon.scss */
+.icon-arrow-down:before {
+  content: "\e900"; }
+
+/* line 31, app/scss/base/icon.scss */
+.icon-arrow-right:before {
+  content: "\e901"; }
+
+/* line 34, app/scss/base/icon.scss */
+.icon-burger:before {
+  content: "\e902"; }
+
+/* line 37, app/scss/base/icon.scss */
+.icon-email:before {
+  content: "\e903"; }
+
+/* line 40, app/scss/base/icon.scss */
+.icon-facebook:before {
+  content: "\e904"; }
+
+/* line 43, app/scss/base/icon.scss */
+.icon-isotipo:before {
+  content: "\e905"; }
+
+/* line 46, app/scss/base/icon.scss */
+.icon-logotipo:before {
+  content: "\e906"; }
+
+/* line 49, app/scss/base/icon.scss */
+.icon-mouse:before {
+  content: "\e907"; }
+
+/* line 52, app/scss/base/icon.scss */
+.icon-play:before {
+  content: "\e908"; }
+
+/* line 55, app/scss/base/icon.scss */
+.icon-Shape:before {
+  content: "\e909"; }
+
+/* line 58, app/scss/base/icon.scss */
+.icon-twitter:before {
+  content: "\e90a"; }
+
+/* line 1, app/scss/base/inicializacion.scss */
+html {
+  font-size: 16px; }
+
+/* line 5, app/scss/base/inicializacion.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+  /* 1 */
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+  font-weight: 300;
+  margin: 0;
+  overflow-x: hidden !important;
+  padding: 0;
+  position: relative; }
+
+/* line 16, app/scss/base/inicializacion.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary,
+p {
+  margin: 0;
+  padding: 0; }
+
+/* line 34, app/scss/base/inicializacion.scss */
+a {
+  text-decoration: none;
+  display: inline-block; }
+
+/* line 39, app/scss/base/inicializacion.scss */
+a:active,
+a:hover,
+a:focus {
+  outline: none; }
+
+/* line 46, app/scss/base/inicializacion.scss */
+ol,
+ul {
+  list-style-type: none;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 54, app/scss/base/inicializacion.scss */
+img {
+  border: 0;
+  display: block;
+  margin: 0 auto;
+  width: 100%; }
+
+/* COMPONENTES */
+/* line 1, app/scss/componentes/componentes.scss */
+.boton {
+  background-color: #19B99C;
+  color: #fff;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 400;
+  padding: 1em 5em; }
+  /* line 9, app/scss/componentes/componentes.scss */
+  .boton:hover {
+    background-color: #16a389; }
+  @media (max-width: 768px) {
+    /* line 1, app/scss/componentes/componentes.scss */
+    .boton {
+      font-size: 16px;
+      font-size: 1rem; } }
+  @media (max-width: 768px) {
+    /* line 1, app/scss/componentes/componentes.scss */
+    .boton {
+      margin: .3em 0;
+      width: 100%; } }
+
+/* line 24, app/scss/componentes/componentes.scss */
+.boton__borrar {
+  background-color: #C2C2C2; }
+  /* line 26, app/scss/componentes/componentes.scss */
+  .boton__borrar:hover, .boton__borrar:focus {
+    background-color: #b5b5b5 !important; }
+
+/* line 31, app/scss/componentes/componentes.scss */
+button.boton {
+  border: none !important; }
+
+/*Contenedor general */
+/* line 40, app/scss/componentes/componentes.scss */
+.wrap {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 98%;
+  position: relative; }
+
+/* line 1, app/scss/componentes/header.scss */
+.header {
+  background-color: #233340;
+  color: #fff;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 100; }
+
+/* line 13, app/scss/componentes/header.scss */
+.header--logotipo {
+  font-size: 70px;
+  font-size: 4.375rem;
+  line-height: 100px; }
+
+/* Mobile iconos */
+/* line 20, app/scss/componentes/header.scss */
+.header--iconMobile {
+  position: absolute;
+  top: 30%;
+  right: 2%; }
+  /* line 25, app/scss/componentes/header.scss */
+  .header--iconMobile--text {
+    font-size: 16px;
+    font-size: 1rem;
+    display: inline-block;
+    margin-right: .5em;
+    vertical-align: middle; }
+  /* line 32, app/scss/componentes/header.scss */
+  .header--iconMobile--burger {
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    height: 40px;
+    margin-top: 5px;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    vertical-align: middle;
+    width: 40px; }
+
+/* line 46, app/scss/componentes/header.scss */
+.burger--stripe {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background: #fff;
+  height: 2px;
+  margin: 8px auto;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 85%; }
+  /* line 53, app/scss/componentes/header.scss */
+  .burger--stripe:nth-child(2) {
+    position: relative;
+    left: -4px;
+    width: 60%; }
+
+/* line 60, app/scss/componentes/header.scss */
+.on .burger--stripe__top {
+  background-color: #fff;
+  -webkit-transform: rotate(45deg) translate(7px, 7px);
+          transform: rotate(45deg) translate(7px, 7px); }
+
+/* line 65, app/scss/componentes/header.scss */
+.on .burger--stripe__middle {
+  opacity: 0; }
+
+/* line 69, app/scss/componentes/header.scss */
+.on .burger--stripe__bottom {
+  background-color: #fff;
+  -webkit-transform: rotate(-45deg) translate(7px, -7px);
+          transform: rotate(-45deg) translate(7px, -7px); }
+
+/* FIN - mobile iconos */
+/* Menu lateral ( mobile ) */
+/* line 81, app/scss/componentes/header.scss */
+.menuLateral {
+  display: inline-block;
+  background-color: rgba(35, 51, 64, 0);
+  height: 100vh;
+  position: absolute;
+  top: 99px;
+  left: -100%;
+  overflow-y: scroll;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+  width: 100%;
+  z-index: 0;
+  text-align: center;
+  padding-bottom: 10em; }
+  /* line 96, app/scss/componentes/header.scss */
+  .menuLateral--item {
+    margin: 5em 0;
+    opacity: .3; }
+    @media (max-width: 480px) {
+      /* line 96, app/scss/componentes/header.scss */
+      .menuLateral--item {
+        margin: 2em 0; } }
+  /* line 104, app/scss/componentes/header.scss */
+  .menuLateral--item--link {
+    color: #fff;
+    display: block;
+    font-size: 60px;
+    font-size: 3.75rem;
+    text-transform: uppercase;
+    -webkit-transition: all .3s;
+    transition: all .3s; }
+    /* line 110, app/scss/componentes/header.scss */
+    .menuLateral--item--link:hover {
+      opacity: .3; }
+    @media (max-width: 480px) {
+      /* line 104, app/scss/componentes/header.scss */
+      .menuLateral--item--link {
+        font-size: 30px;
+        font-size: 1.875rem; } }
+
+/* line 123, app/scss/componentes/header.scss */
+.menuLateral--item__active .menuLateral--item--link {
+  color: #19B99C !important; }
+
+/* FIN - menu lateral ( mobile ) */
+/* Clase global para todos los banner */
+/* line 3, app/scss/componentes/banner.scss */
+.banner {
+  background-color: #fff;
+  color: #fff;
+  text-align: center;
+  position: relative; }
+
+/* line 12, app/scss/componentes/banner.scss */
+.banner--info {
+  text-align: left;
+  color: #233340; }
+  @media (max-width: 480px) {
+    /* line 12, app/scss/componentes/banner.scss */
+    .banner--info {
+      text-align: center;
+      margin-top: 2em; } }
+  /* line 20, app/scss/componentes/banner.scss */
+  .banner--info--titulo {
+    font-size: 55px;
+    font-size: 3.4375rem;
+    line-height: 65px;
+    line-height: 4.0625rem;
+    font-weight: 300;
+    margin: 0; }
+    @media (max-width: 1024px) {
+      /* line 20, app/scss/componentes/banner.scss */
+      .banner--info--titulo {
+        font-size: 48px;
+        font-size: 3rem;
+        line-height: 50px;
+        line-height: 3.125rem; } }
+    @media (max-width: 768px) {
+      /* line 20, app/scss/componentes/banner.scss */
+      .banner--info--titulo {
+        font-size: 30px;
+        font-size: 1.875rem;
+        line-height: 36px;
+        line-height: 2.25rem; } }
+    /* line 36, app/scss/componentes/banner.scss */
+    .banner--info--titulo .titulo--destacado {
+      color: #19B99C; }
+  /* line 41, app/scss/componentes/banner.scss */
+  .banner--info--parrafo {
+    font-size: 18px;
+    font-size: 1.125rem;
+    margin: 1.5em 0; }
+    @media (max-width: 768px) {
+      /* line 41, app/scss/componentes/banner.scss */
+      .banner--info--parrafo {
+        font-size: 14px;
+        font-size: 0.875rem;
+        line-height: 20px;
+        line-height: 1.25rem; } }
+    /* line 50, app/scss/componentes/banner.scss */
+    .banner--info--parrafo .parrafo--destacado {
+      color: #19B99C;
+      font-weight: 400; }
+  /* line 58, app/scss/componentes/banner.scss */
+  .banner--info--descarga {
+    max-width: 170px;
+    margin-right: 1em;
+    width: 100%; }
+    @media (max-width: 768px) {
+      /* line 58, app/scss/componentes/banner.scss */
+      .banner--info--descarga {
+        max-width: 180px; } }
+    @media (max-width: 480px) {
+      /* line 58, app/scss/componentes/banner.scss */
+      .banner--info--descarga {
+        max-width: 40%; } }
+  /* line 71, app/scss/componentes/banner.scss */
+  .banner--info--testimonio {
+    color: #233340;
+    margin: 4em 0; }
+    @media (max-width: 480px) {
+      /* line 71, app/scss/componentes/banner.scss */
+      .banner--info--testimonio {
+        text-align: left; } }
+    /* line 79, app/scss/componentes/banner.scss */
+    .banner--info--testimonio .testimonio--avatar {
+      border-radius: 50%;
+      overflow: hidden;
+      max-width: 65px; }
+    /* line 86, app/scss/componentes/banner.scss */
+    .banner--info--testimonio .testimonio--texto {
+      color: #91999F;
+      font-size: 14px;
+      font-size: 0.875rem;
+      line-height: 19px;
+      line-height: 1.1875rem;
+      font-style: italic; }
+    /* line 93, app/scss/componentes/banner.scss */
+    .banner--info--testimonio .testimonio--autor {
+      font-size: 16px;
+      font-size: 1rem;
+      font-style: italic;
+      font-weight: 600;
+      margin-top: 1em; }
+      /* line 98, app/scss/componentes/banner.scss */
+      .banner--info--testimonio .testimonio--autor--nota {
+        font-weight: 300; }
+
+/* line 107, app/scss/componentes/banner.scss */
+.banner--foto {
+  margin: 0; }
+
+/* line 113, app/scss/componentes/banner.scss */
+.banner--ancla {
+  color: #fff;
+  margin: 3em auto 0 auto;
+  position: relative;
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+  /* line 119, app/scss/componentes/banner.scss */
+  .banner--ancla--mouse {
+    font-size: 50px;
+    font-size: 3.125rem; }
+  /* line 123, app/scss/componentes/banner.scss */
+  .banner--ancla--flecha {
+    font-size: 20px;
+    font-size: 1.25rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40px;
+    -webkit-animation: animate-flecha 2s infinite ease;
+            animation: animate-flecha 2s infinite ease; }
+  /* line 132, app/scss/componentes/banner.scss */
+  .banner--ancla--text {
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 1.5em; }
+
+@-webkit-keyframes animate-flecha {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px); }
+  60% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px); } }
+
+@keyframes animate-flecha {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px); }
+  60% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px); } }
+
+/* Seccion wiseBot */
+/* line 148, app/scss/componentes/banner.scss */
+.banner__main {
+  background-color: #233340;
+  padding: 14em 0 6em 0;
+  overflow: hidden; }
+  /* line 153, app/scss/componentes/banner.scss */
+  .banner__main .banner--info--titulo, .banner__main .banner--info--parrafo {
+    color: #fff; }
+  @media (max-width: 480px) {
+    /* line 148, app/scss/componentes/banner.scss */
+    .banner__main {
+      padding-top: 10em; } }
+
+/* Fin */
+/* Seccion wiseSense */
+/* line 167, app/scss/componentes/banner.scss */
+.banner__wisesense {
+  padding: 0; }
+  /* line 170, app/scss/componentes/banner.scss */
+  .banner__wisesense .banner--foto {
+    overflow: visible !important;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 60%;
+    z-index: 2; }
+    /* line 178, app/scss/componentes/banner.scss */
+    .banner__wisesense .banner--foto img {
+      min-height: auto !important; }
+  /* line 183, app/scss/componentes/banner.scss */
+  .banner__wisesense .parallax-container {
+    height: 350px; }
+  @media (max-width: 768px) {
+    /* line 188, app/scss/componentes/banner.scss */
+    .banner__wisesense .banner--foto {
+      top: 0; } }
+  @media (max-width: 480px) {
+    /* line 194, app/scss/componentes/banner.scss */
+    .banner__wisesense .banner--foto {
+      top: -120px;
+      width: 100%; }
+    /* line 199, app/scss/componentes/banner.scss */
+    .banner__wisesense .banner--info {
+      margin-top: 6em; } }
+
+/* Fin */
+/* line 210, app/scss/componentes/banner.scss */
+.banner__wisebot {
+  padding: 8em 0 0 0; }
+  @media (max-width: 768px) {
+    /* line 210, app/scss/componentes/banner.scss */
+    .banner__wisebot {
+      padding: 4em 0 0 0; } }
+
+/* Seccion app */
+/* line 219, app/scss/componentes/banner.scss */
+.banner__app {
+  padding: 8em 0 4em 0; }
+  @media (max-width: 768px) {
+    /* line 219, app/scss/componentes/banner.scss */
+    .banner__app {
+      padding: 4em 0; } }
+  /* line 226, app/scss/componentes/banner.scss */
+  .banner__app .banner--info {
+    margin-top: 8em; }
+    @media (max-width: 480px) {
+      /* line 226, app/scss/componentes/banner.scss */
+      .banner__app .banner--info {
+        margin-top: 4em; } }
+
+/* Fin */
+/* Seccion features APP */
+/* line 239, app/scss/componentes/banner.scss */
+.banner__features {
+  padding: 6em 0; }
+  @media (max-width: 768px) {
+    /* line 239, app/scss/componentes/banner.scss */
+    .banner__features {
+      padding-top: 0; } }
+  @media (max-width: 480px) {
+    /* line 239, app/scss/componentes/banner.scss */
+    .banner__features {
+      margin-top: 4em; } }
+  /* line 249, app/scss/componentes/banner.scss */
+  .banner__features .banner--foto {
+    overflow: visible !important;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 50%;
+    z-index: 2; }
+    /* line 257, app/scss/componentes/banner.scss */
+    .banner__features .banner--foto img {
+      min-height: auto !important; }
+    @media (max-width: 480px) {
+      /* line 249, app/scss/componentes/banner.scss */
+      .banner__features .banner--foto {
+        top: -50px;
+        left: 3%;
+        width: 95%; } }
+  /* line 268, app/scss/componentes/banner.scss */
+  .banner__features .parallax-container {
+    height: 400px; }
+  /* line 272, app/scss/componentes/banner.scss */
+  .banner__features .banner--info {
+    margin-top: 5em; }
+    @media (max-width: 480px) {
+      /* line 272, app/scss/componentes/banner.scss */
+      .banner__features .banner--info {
+        margin-top: 25em;
+        position: relative; } }
+
+/* Fin */
+/* line 288, app/scss/componentes/banner.scss */
+.banner__partners .banner--sliderPartners--item {
+  height: 250px;
+  margin-top: 2em;
+  position: relative; }
+  @media (max-width: 768px) {
+    /* line 288, app/scss/componentes/banner.scss */
+    .banner__partners .banner--sliderPartners--item {
+      height: 200px;
+      margin-top: 0; } }
+  @media (max-width: 480px) {
+    /* line 288, app/scss/componentes/banner.scss */
+    .banner__partners .banner--sliderPartners--item {
+      height: 200px;
+      margin-top: 2em; } }
+
+/* line 305, app/scss/componentes/banner.scss */
+.banner__partners .item--logotipo {
+  max-width: 400px;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 5%; }
+  @media (max-width: 768px) {
+    /* line 305, app/scss/componentes/banner.scss */
+    .banner__partners .item--logotipo {
+      max-width: 300px; } }
+
+/* line 317, app/scss/componentes/banner.scss */
+.banner__partners .item--detalle {
+  color: #687C92;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-style: italic;
+  position: absolute;
+  bottom: 5%; }
+
+/* setting del carrousel */
+/* line 328, app/scss/componentes/banner.scss */
+.owl-partners {
+  display: inline-block !important;
+  position: relative;
+  z-index: 1; }
+  /* line 333, app/scss/componentes/banner.scss */
+  .owl-partners .owl-nav {
+    display: none; }
+  /* line 337, app/scss/componentes/banner.scss */
+  .owl-partners .owl-dots {
+    display: inline-block !important;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -12%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 3; }
+    /* line 347, app/scss/componentes/banner.scss */
+    .owl-partners .owl-dots .owl-dot {
+      background-color: #D8D8D8;
+      border: 1px solid #D8D8D8;
+      border-radius: 50%;
+      height: 10px;
+      display: inline-block;
+      margin: 5px;
+      pointer-events: all;
+      width: 10px; }
+      /* line 357, app/scss/componentes/banner.scss */
+      .owl-partners .owl-dots .owl-dot.active {
+        background-color: #5D5C5C;
+        border: 1px solid #5D5C5C; }
+
+/* Triangulo inferior para dar la forma a las secciones*/
+/* line 368, app/scss/componentes/banner.scss */
+.banner--forma {
+  border-left: 1920px solid #fff;
+  border-top: 100px solid transparent;
+  border-bottom: 0 solid transparent;
+  height: 0;
+  position: absolute;
+  left: 0;
+  bottom: -1px; }
+
+/* line 378, app/scss/componentes/banner.scss */
+.banner--forma__top {
+  border-top: 0 solid transparent;
+  border-bottom: 100px solid transparent;
+  top: -1px;
+  bottom: inherit; }
+
+/* line 1, app/scss/componentes/equipo.scss */
+.equipo {
+  background-color: #233340;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  padding: 10em 0 8em 0;
+  text-align: center; }
+  @media (min-width: 480px) {
+    /* line 10, app/scss/componentes/equipo.scss */
+    .equipo .u-clear {
+      display: none; } }
+
+/* line 18, app/scss/componentes/equipo.scss */
+.equipo--titulo {
+  font-size: 55px;
+  font-size: 3.4375rem;
+  line-height: 65px;
+  line-height: 4.0625rem;
+  font-weight: 300;
+  margin: 0 0 1.5em 0; }
+  @media (max-width: 1024px) {
+    /* line 18, app/scss/componentes/equipo.scss */
+    .equipo--titulo {
+      font-size: 48px;
+      font-size: 3rem;
+      line-height: 50px;
+      line-height: 3.125rem; } }
+  @media (max-width: 768px) {
+    /* line 18, app/scss/componentes/equipo.scss */
+    .equipo--titulo {
+      font-size: 30px;
+      font-size: 1.875rem; } }
+  /* line 34, app/scss/componentes/equipo.scss */
+  .equipo--titulo--destacado {
+    color: #19B99C; }
+  /* line 38, app/scss/componentes/equipo.scss */
+  .equipo--titulo--bajada {
+    display: block;
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 30px;
+    line-height: 1.875rem;
+    font-weight: 300; }
+    @media (max-width: 768px) {
+      /* line 38, app/scss/componentes/equipo.scss */
+      .equipo--titulo--bajada {
+        font-size: 16px;
+        font-size: 1rem;
+        line-height: 18px;
+        line-height: 1.125rem; } }
+
+/* line 52, app/scss/componentes/equipo.scss */
+.equipo--perfil {
+  text-align: center;
+  margin-bottom: 4em; }
+  /* line 56, app/scss/componentes/equipo.scss */
+  .equipo--perfil--avatar {
+    background-color: #233340;
+    border-radius: 50%;
+    max-width: 115px;
+    margin: 0 auto;
+    overflow: hidden; }
+    /* line 63, app/scss/componentes/equipo.scss */
+    .equipo--perfil--avatar img {
+      -webkit-filter: grayscale(100%);
+              filter: grayscale(100%); }
+    @media (max-width: 768px) {
+      /* line 56, app/scss/componentes/equipo.scss */
+      .equipo--perfil--avatar {
+        max-width: 90px; } }
+  /* line 73, app/scss/componentes/equipo.scss */
+  .equipo--perfil--nombre {
+    font-size: 20px;
+    font-size: 1.25rem;
+    margin-top: .5em; }
+    /* line 77, app/scss/componentes/equipo.scss */
+    .equipo--perfil--nombre span {
+      color: #91999F;
+      display: block;
+      font-size: 14px;
+      font-size: 0.875rem; }
+    @media (max-width: 768px) {
+      /* line 73, app/scss/componentes/equipo.scss */
+      .equipo--perfil--nombre {
+        font-size: 16px;
+        font-size: 1rem;
+        line-height: 16px;
+        line-height: 1rem; } }
+    @media (max-width: 480px) {
+      /* line 73, app/scss/componentes/equipo.scss */
+      .equipo--perfil--nombre {
+        font-size: 14px;
+        font-size: 0.875rem; }
+        /* line 90, app/scss/componentes/equipo.scss */
+        .equipo--perfil--nombre span {
+          font-size: 12px;
+          font-size: 0.75rem; } }
+  /* line 96, app/scss/componentes/equipo.scss */
+  .equipo--perfil--social {
+    margin-top: .5em; }
+    /* line 99, app/scss/componentes/equipo.scss */
+    .equipo--perfil--social .social--link {
+      border-radius: 50%;
+      border: 1px solid #fff;
+      color: #fff;
+      height: 35px;
+      line-height: 35px;
+      margin: 0 .3em;
+      text-align: center;
+      width: 35px; }
+      /* line 109, app/scss/componentes/equipo.scss */
+      .equipo--perfil--social .social--link span {
+        font-size: 12px;
+        font-size: 0.75rem; }
+
+/* line 1, app/scss/componentes/video.scss */
+.video {
+  background-image: url(../img/cover-video.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #233340;
+  margin: 8em 0;
+  position: relative;
+  text-align: center; }
+  @media (max-width: 480px) {
+    /* line 1, app/scss/componentes/video.scss */
+    .video {
+      margin-bottom: 2em; } }
+
+/* line 16, app/scss/componentes/video.scss */
+.video--presentacion {
+  color: #fff;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 35%;
+  text-align: center;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  z-index: 10; }
+  @media (max-width: 480px) {
+    /* line 16, app/scss/componentes/video.scss */
+    .video--presentacion {
+      top: 20%; } }
+  /* line 31, app/scss/componentes/video.scss */
+  .video--presentacion--titulo {
+    font-size: 60px;
+    font-size: 3.75rem;
+    font-weight: 300;
+    margin: 0; }
+    @media (max-width: 1024px) {
+      /* line 31, app/scss/componentes/video.scss */
+      .video--presentacion--titulo {
+        font-size: 48px;
+        font-size: 3rem;
+        line-height: 50px;
+        line-height: 3.125rem; } }
+    @media (max-width: 480px) {
+      /* line 31, app/scss/componentes/video.scss */
+      .video--presentacion--titulo {
+        font-size: 24px;
+        font-size: 1.5rem;
+        line-height: 30px;
+        line-height: 1.875rem; } }
+  /* line 46, app/scss/componentes/video.scss */
+  .video--presentacion--bajada {
+    font-size: 24px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    opacity: .5; }
+    @media (max-width: 480px) {
+      /* line 46, app/scss/componentes/video.scss */
+      .video--presentacion--bajada {
+        font-size: 12px;
+        font-size: 0.75rem; } }
+  /* line 57, app/scss/componentes/video.scss */
+  .video--presentacion--icon {
+    background-color: #fff;
+    border-radius: 50%;
+    color: #233340;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-size: 1rem;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 1.5em;
+    text-align: center;
+    width: 50px; }
+    /* line 70, app/scss/componentes/video.scss */
+    .video--presentacion--icon:before {
+      margin-left: 5px; }
+    @media (max-width: 480px) {
+      /* line 57, app/scss/componentes/video.scss */
+      .video--presentacion--icon {
+        margin-top: .5em; } }
+
+/* line 83, app/scss/componentes/video.scss */
+video {
+  display: inherit;
+  margin: 0 auto;
+  max-width: 800px;
+  opacity: 0;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+  width: 100%;
+  z-index: 0; }
+
+/* line 1, app/scss/componentes/contacto.scss */
+.contacto--formulario {
+  color: #233340;
+  text-align: left; }
+  /* line 5, app/scss/componentes/contacto.scss */
+  .contacto--formulario .input-field {
+    margin-bottom: 1em; }
+  /* line 9, app/scss/componentes/contacto.scss */
+  .contacto--formulario .boton {
+    margin-right: 1em; }
+  @media (max-width: 480px) {
+    /* line 1, app/scss/componentes/contacto.scss */
+    .contacto--formulario {
+      margin: 4em 0; } }
+
+/* line 18, app/scss/componentes/contacto.scss */
+.contacto--info {
+  color: #233340;
+  margin-top: 4em; }
+  @media (max-width: 480px) {
+    /* line 18, app/scss/componentes/contacto.scss */
+    .contacto--info {
+      margin-top: 4em; } }
+  /* line 26, app/scss/componentes/contacto.scss */
+  .contacto--info--titulo {
+    font-size: 36px;
+    font-size: 2.25rem;
+    font-weight: 300;
+    margin: 0 0 .7em 0;
+    text-align: left; }
+    @media (max-width: 480px) {
+      /* line 26, app/scss/componentes/contacto.scss */
+      .contacto--info--titulo {
+        font-size: 30px;
+        font-size: 1.875rem; } }
+  /* line 37, app/scss/componentes/contacto.scss */
+  .contacto--info--lista {
+    text-align: left; }
+  /* line 41, app/scss/componentes/contacto.scss */
+  .contacto--info .lista--item {
+    font-size: 18px;
+    font-size: 1.125rem;
+    margin: 1em 0;
+    opacity: .8; }
+    /* line 45, app/scss/componentes/contacto.scss */
+    .contacto--info .lista--item span {
+      color: #9B9B9B;
+      font-size: 14px;
+      font-size: 0.875rem;
+      margin-right: 1.5em; }
+    @media (max-width: 480px) {
+      /* line 41, app/scss/componentes/contacto.scss */
+      .contacto--info .lista--item {
+        font-size: 14px;
+        font-size: 0.875rem; } }
+
+/* line 58, app/scss/componentes/contacto.scss */
+.mapa {
+  height: 450px;
+  margin-top: 3em;
+  position: relative;
+  overflow: hidden; }
+  @media (max-width: 800px) {
+    /* line 58, app/scss/componentes/contacto.scss */
+    .mapa {
+      margin-top: 69px; } }
+
+/* line 1, app/scss/componentes/footer.scss */
+.footer {
+  background-color: #233340;
+  color: #fff;
+  padding: 1.5em 0 0 0;
+  text-align: center; }
+  /* line 7, app/scss/componentes/footer.scss */
+  .footer--logotipo {
+    font-size: 60px;
+    font-size: 3.75rem; }
+  /* line 11, app/scss/componentes/footer.scss */
+  .footer--copy {
+    background-color: #141E27;
+    margin-top: 1.2em;
+    overflow: hidden;
+    padding: .5em 0; }
+    /* line 17, app/scss/componentes/footer.scss */
+    .footer--copy--legal {
+      color: #fff;
+      font-size: 12px;
+      font-size: 0.75rem;
+      float: left;
+      opacity: .5; }
+      @media (max-width: 480px) {
+        /* line 17, app/scss/componentes/footer.scss */
+        .footer--copy--legal {
+          font-size: 11px;
+          font-size: 0.6875rem;
+          float: none; } }
+    /* line 28, app/scss/componentes/footer.scss */
+    .footer--copy--sociales {
+      float: right; }
+      @media (max-width: 480px) {
+        /* line 28, app/scss/componentes/footer.scss */
+        .footer--copy--sociales {
+          float: none; } }
+      /* line 33, app/scss/componentes/footer.scss */
+      .footer--copy--sociales .sociales--item {
+        color: #fff;
+        font-size: 14px;
+        font-size: 0.875rem;
+        margin-left: 1em;
+        opacity: .5;
+        -webkit-transition: all .3s;
+        transition: all .3s; }
+        @media (max-width: 480px) {
+          /* line 33, app/scss/componentes/footer.scss */
+          .footer--copy--sociales .sociales--item {
+            font-size: 16px;
+            font-size: 1rem;
+            margin-left: 0;
+            margin: .3em .7em; } }
+        /* line 46, app/scss/componentes/footer.scss */
+        .footer--copy--sociales .sociales--item:hover {
+          opacity: .7; }
+
+/* PAGINAS */
+/* ESTE CSS SIEMPRE TIENE QUE ESTAR AL FINAL */
+/* elimina el espacio entre los contenidos */
+/* line 2, app/scss/componentes/helper.scss */
+.u-resetRow {
+  margin-bottom: 0; }
+
+/* permite que las columnas utilicen el 100% */
+/* line 7, app/scss/componentes/helper.scss */
+.u-gutter {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  position: relative; }
+
+/* line 14, app/scss/componentes/helper.scss */
+.u-gutter-left {
+  padding-left: 0 !important;
+  position: relative; }
+
+/* line 19, app/scss/componentes/helper.scss */
+.u-gutter-right {
+  padding-right: 0 !important;
+  position: relative; }
+
+/* line 24, app/scss/componentes/helper.scss */
+.u-clear {
+  clear: both;
+  width: 100%; }
+
+/* Oculta los iconos de comparar y hamburguesa en desktop */
+/* line 33, app/scss/componentes/helper.scss */
+.u-mobile {
+  display: none; }
+  @media (max-width: 480px) {
+    /* line 33, app/scss/componentes/helper.scss */
+    .u-mobile {
+      display: block; } }
+
+/* line 40, app/scss/componentes/helper.scss */
+.u-destop {
+  display: inherit; }
+  @media (max-width: 480px) {
+    /* line 40, app/scss/componentes/helper.scss */
+    .u-destop {
+      display: none; } }
+
+/* Muestra y/o oculta el menu lateral */
+/* line 49, app/scss/componentes/helper.scss */
+.u-show {
+  left: 0 !important; }

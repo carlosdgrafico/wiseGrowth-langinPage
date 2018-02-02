@@ -1,0 +1,25 @@
+/* BASE - GENERALES */
+@import 'base/fuentes.scss';
+@import 'base/icon.scss';
+@import 'base/variables.scss';
+@import 'base/mixins.scss';
+@import 'base/inicializacion.scss';
+
+
+/* COMPONENTES */
+@import 'componentes/componentes.scss';
+@import 'componentes/header.scss';
+@import 'componentes/banner.scss';
+@import 'componentes/equipo.scss';
+@import 'componentes/video.scss';
+@import 'componentes/contacto.scss';
+@import 'componentes/footer.scss';
+
+
+
+/* PAGINAS */
+
+
+
+/* ESTE CSS SIEMPRE TIENE QUE ESTAR AL FINAL */
+@import 'componentes/helper.scss';

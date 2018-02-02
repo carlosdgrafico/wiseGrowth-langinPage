@@ -1,0 +1,53 @@
+/* elimina el espacio entre los contenidos */
+.u-resetRow{
+	margin-bottom: 0;
+}
+
+/* permite que las columnas utilicen el 100% */
+.u-gutter{
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+	position: relative ;
+}
+
+
+.u-gutter-left{
+	padding-left: 0 !important;
+	position: relative ;
+}
+
+.u-gutter-right{
+	padding-right: 0 !important;
+	position: relative ;
+}
+
+.u-clear{
+	clear: both;
+	width: 100%;
+}
+
+
+/* Oculta los iconos de comparar y hamburguesa en desktop */
+
+
+.u-mobile{
+	display: none;
+	@media(max-width: 480px){
+		display: block;
+	}
+}
+
+.u-destop{
+	display: inherit;
+	@media(max-width: 480px){
+		display: none;
+	}
+}
+
+
+/* Muestra y/o oculta el menu lateral */
+.u-show{
+	//  position: absolute;
+	left: 0 !important;
+	//  overflow: hidden;
+}

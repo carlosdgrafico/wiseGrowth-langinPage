@@ -1,0 +1,45 @@
+.boton{
+   background-color: $secondary-color;
+   color: #fff;
+   @include font-size(18);
+   font-weight: 400;
+   padding: 1em 5em;
+
+
+   &:hover{
+      background-color: darken($secondary-color, 5%);
+   }
+
+   @media(max-width: 768px){
+      @include font-size(16);
+   }
+
+   @media(max-width: 768px){
+      margin: .3em 0;
+      width: 100%;
+   }
+}
+
+
+.boton__borrar{
+   background-color: #C2C2C2;
+   &:hover, &:focus{
+      background-color: darken(#C2C2C2, 5%) !important;
+   }
+}
+
+button.boton{
+   border: none !important;
+}
+
+
+
+
+/*Contenedor general */
+
+.wrap{
+   margin: 0 auto;
+   max-width: 1200px;
+   width: 98%;
+   position: relative;
+}

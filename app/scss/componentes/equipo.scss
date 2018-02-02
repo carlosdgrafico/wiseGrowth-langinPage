@@ -1,0 +1,114 @@
+.equipo{
+   background-color: $primary-color;
+   color: #fff;
+   overflow: hidden;
+   position: relative;
+   padding: 10em 0 8em 0;
+   text-align: center;
+
+   @media(min-width: 480px){
+      .u-clear{
+         display: none;
+      }
+   }
+
+}
+
+
+   .equipo--titulo{
+      @include font-size(55);
+      @include line-height(65);
+      font-weight: 300;
+      margin: 0 0 1.5em 0;
+
+      @media(max-width: 1024px){
+         @include font-size(48);
+         @include line-height(50);
+      }
+
+      @media(max-width: 768px){
+         @include font-size(30);
+      }
+
+
+      &--destacado{
+         color: $secondary-color;
+      }
+
+      &--bajada{
+         display: block;
+         @include font-size(18);
+         @include line-height(30);
+         font-weight: 300;
+
+         @media(max-width: 768px){
+            @include font-size(16);
+            @include line-height(18);
+         }
+      }
+   }
+
+
+   .equipo--perfil{
+      text-align: center;
+      margin-bottom: 4em;
+
+      &--avatar{
+         background-color: $primary-color;
+         border-radius: 50%;
+         max-width: 115px;
+         margin: 0 auto;
+         overflow: hidden;
+
+         img{
+            filter: grayscale(100%);
+         }
+
+         @media(max-width: 768px){
+            max-width: 90px;
+         }
+
+      }
+
+      &--nombre{
+         @include font-size(20);
+         margin-top: .5em;
+
+         span{
+            color: #91999F;
+            display: block;
+            @include font-size(14);
+         }
+
+         @media(max-width: 768px){
+            @include font-size(16);
+            @include line-height(16);
+         }
+
+         @media(max-width: 480px){
+            @include font-size(14);
+            span{
+               @include font-size(12);
+            }
+         }
+      }
+
+      &--social{
+         margin-top: .5em;
+
+         .social--link{
+            border-radius: 50%;
+            border: 1px solid #fff;
+            color: #fff;
+            height: 35px;
+            line-height: 35px;
+            margin: 0 .3em;
+            text-align: center;
+            width: 35px;
+
+            span{
+               @include font-size(12);
+            }
+         }
+      }
+   }

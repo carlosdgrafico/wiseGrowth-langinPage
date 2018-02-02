@@ -1,0 +1,24 @@
+{
+  "name": "wisegrowth",
+  "description": "landing-page wisegrowth",
+  "main": "index.js",
+  "authors": [
+    "team-wisegrowth"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/carlosdgrafico/wiseGrowth-langinPage",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./app/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "^0.100.2",
+    "owl.carousel": "^2.2.1",
+    "animate.css": "^3.5.2",
+    "fancybox": "^3.1.20"
+  }
+}

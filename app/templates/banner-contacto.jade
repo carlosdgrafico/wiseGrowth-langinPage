@@ -1,0 +1,51 @@
+section.banner.banner__contacto
+	.wrap
+		.row
+			.col.s12.m4
+				.banner--info.wow.slideInLeft
+					h2.banner--info--titulo Te gusto 
+						span.titulo--destacado WiseBot?
+					p.banner--info--parrafo Si te gusto lo que viste y eres una de las personas a las cuales 
+						span.parrafo--destacado WiseBot & WiseSens
+						| le hará la vida más fácil, utiliza este formulario, envianos tus datos y nosotros nos comunicaremos contigo.  
+					p.banner--info--parrafo Por ahora te invitamos a descargar nuestrta 
+						span.parrafo--destacado WiseGrowth APP 
+						| y disfrutar de todos los beneficios que tiene para ti.  
+				.contacto--info.wow.slideInLeft(data-wow-offset="10" data-wow-delay=".5s")
+					h2.contacto--info--titulo Contacto
+					ul.contacto--info--lista
+						li.lista--item
+							span.icon-arrow-right
+							| +569 6218 1932
+						li.lista--item
+							span.icon-arrow-right
+							| info.wisegrowth@gmail.com 
+						li.lista--item
+							span.icon-arrow-right
+							| Av. Monjitas 565, Piso 5, Santiago de Chile 
+			.col.s12.m6.offset-m2
+				.contacto--formulario.wow.slideInRight
+					form(name='formulario' method='post' action='')
+						.input-field
+							input.validate(type='text' name='nombre')
+							label(for='nombre') Nombre
+
+						.input-field
+							input.validate(type='email' name='email')
+							label(for='email' data-error="ingrese una direccion valida") Correo electrónico
+
+						.input-field
+							input.validate(type='tel' name='telefono' data-length="9")
+							label(for='telefono' data-error="ingresar un numero valido") Teléfono
+
+						.input-field
+							textarea.materialize-textarea(name='mensaje')
+							label(for='mensaje') Tienes algo que decirnos ?
+
+						button.boton.boton__borrar.waves-effect(type="reset") 
+							| borrar
+						button.boton.waves-effect(type="submit") 
+							| Enviar
+
+	section.mapa
+		iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.4861640364165!2d-70.64748798480109!3d-33.436638280777835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5987f262d7b%3A0xbe48dd024684c3a5!2sMonjitas+565%2C+Santiago%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses!2scl!4v1507658748718" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen)
